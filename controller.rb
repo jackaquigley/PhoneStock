@@ -8,3 +8,9 @@ get '/phones' do
   @phones = Phone.all
   erb(:index)
 end
+
+get '/phones/:id/sell' do
+  phone = Phone.find(params['id'])
+  phone.delete
+  redirect to '/phones'
+end

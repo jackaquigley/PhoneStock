@@ -39,6 +39,20 @@ class Phone
     return phones
   end
 
+  def delete()
+    sql = "DELETE FROM phones where id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM phones WHERE id = $1"
+    values = [id]
+    result = SqlRunner.run(sql, values).first
+    phone = Phone.new(result)
+    return phone
+  end
+
   def self.map_items(phone_data)
     return phone_data.map {
       |phone| Phone.new(phone)}
