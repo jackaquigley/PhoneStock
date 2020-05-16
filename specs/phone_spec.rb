@@ -18,4 +18,12 @@ class PhoneTest < Minitest::Test
     assert_equal("I-Phone XS Max", @phone1.name)
   end
 
+  def test_phone_has_storage
+    assert_equal('256GB', @phone1.storage)
+  end
+
+  def test_phone_has_colour
+    assert_equal('Black', @phone1.colour)
+  end
+
 end
