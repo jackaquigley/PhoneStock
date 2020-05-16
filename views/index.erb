@@ -1,3 +1,13 @@
 <h2>Phones</h2>
 
-  <div></div>
+<div id="phones-wrapper">
+  <% @phones.each do |phone| %>
+
+  <div class="phone-wrapper">
+    <%= phone.name %>
+
+  <% end %>
+    
+  </div>
+
+</div>

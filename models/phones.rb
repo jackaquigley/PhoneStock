@@ -13,7 +13,7 @@ class Phone
   end
 
   def save()
-    sql = "INSERT INTO Phones
+    sql = "INSERT INTO phones
     (
       name,
       storage,
@@ -25,10 +25,23 @@ class Phone
       $2,
       $3
     )
-    RETURNING ID"
+    RETURNING id"
     values = [@name, @storage, @colour]
+    result = SqlRunner.run(sql, values)
     id = result.first['id']
     @id = id.to_i
+  end
+
+  def self.all()
+    sql = "SELECT * FROM phones"
+    phone_data = SqlRunner.run(sql)
+    phones = map_items(phone_data)
+    return phones
+  end
+
+  def self.map_items(phone_data)
+    return phone_data.map {
+      |phone| Phone.new(phone)}
   end
 
 end
