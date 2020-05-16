@@ -1,13 +1,28 @@
 <h2>Phones</h2>
 
 <div id="phones-wrapper">
+
+  <table>
+
+  <th id="nameTable">Name: </th>
+
+  <th id="storageTable">Storage: </th>
+
+  <th id="colourTable">Colour: </th>
   <% @phones.each do |phone| %>
 
-  <div class="phone-wrapper">
-    <%= phone.name %>
+  <tr>
+
+  <td> <%= phone.name %> </td>
+
+  <td> <%= phone.storage %> </td>
+
+  <td> <%= phone.colour %> </td>
+
+  </tr>
 
   <% end %>
-    
-  </div>
+
+  </table>
 
 </div>

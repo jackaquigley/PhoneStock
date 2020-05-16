@@ -2,8 +2,8 @@ require_relative('../db/sql_runner')
 
 class Phone
 
+  attr_accessor :name, :storage, :colour
   attr_reader :id
-  attr_accessor :name, :storage, :colour, :networks
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
@@ -42,6 +42,11 @@ class Phone
   def self.map_items(phone_data)
     return phone_data.map {
       |phone| Phone.new(phone)}
+  end
+
+  def self.delete_all()
+    sql = "DELETE FROM phones"
+    SqlRunner.run (sql)
   end
 
 end
