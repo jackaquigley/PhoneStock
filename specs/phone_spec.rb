@@ -2,7 +2,7 @@ require('minitest/autorun')
 require('minitest/reporters')
 Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
-require_relative('/models/phones.rb')
+require_relative('../models/phones.rb')
 
 class PhoneTest < Minitest::Test
 
@@ -10,7 +10,9 @@ class PhoneTest < Minitest::Test
     @phone1 = Phone.new({
       'name' => 'I-Phone XS Max',
       'storage' => '256GB',
-      'colour' => 'Black'
+      'colour' => 'Black',
+      'buy_price' => 450,
+      'sell_price' => 775
     })
   end
 
@@ -24,6 +26,14 @@ class PhoneTest < Minitest::Test
 
   def test_phone_has_colour
     assert_equal('Black', @phone1.colour)
+  end
+
+  def test_phone_has_buy_price
+    assert_equal(450, @phone1.buy_price)
+  end
+
+  def test_phone_has_sell_price
+    assert_equal(775, @phone1.sell_price)
   end
 
 end

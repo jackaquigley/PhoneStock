@@ -4,11 +4,15 @@
 
   <table>
 
-  <th id="nameTable">Name: </th>
+  <th id="nameTable">Name</th>
 
-  <th id="storageTable">Storage: </th>
+  <th id="storageTable">Storage</th>
 
-  <th id="colourTable">Colour: </th>
+  <th id="colourTable">Colour </th>
+
+  <th id="buyPriceTable">Buy Price</th>
+
+  <th id="sellPrice">Sell Price</th>
   <% @phones.each do |phone| %>
 
   <tr>
@@ -18,6 +22,10 @@
   <td> <%= phone.storage %> </td>
 
   <td> <%= phone.colour %> </td>
+
+  <td> <%= phone.buy_price %> </td>
+
+  <td> <%= phone.sell_price %> </td>
 
   <td> <a href="/phones/<%= phone.id %>/sell">Sell Phone</a></td>
 

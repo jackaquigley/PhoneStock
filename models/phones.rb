@@ -2,7 +2,7 @@ require_relative('../db/sql_runner')
 
 class Phone
 
-  attr_accessor :name, :storage, :colour
+  attr_accessor :name, :storage, :colour, :buy_price, :sell_price
   attr_reader :id
 
   def initialize(options)
@@ -10,6 +10,8 @@ class Phone
     @name = options['name']
     @storage = options['storage']
     @colour = options['colour']
+    @buy_price = options['buy_price']
+    @sell_price = options['sell_price']
   end
 
   def save()
@@ -17,16 +19,20 @@ class Phone
     (
       name,
       storage,
-      colour
+      colour,
+      buy_price,
+      sell_price
     )
     VALUES
     (
       $1,
       $2,
-      $3
+      $3,
+      $4,
+      $5
     )
     RETURNING id"
-    values = [@name, @storage, @colour]
+    values = [@name, @storage, @colour, @buy_price, @sell_price]
     result = SqlRunner.run(sql, values)
     id = result.first['id']
     @id = id.to_i
