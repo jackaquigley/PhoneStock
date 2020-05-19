@@ -17,6 +17,89 @@ table {
   width: 200px;
 }
 
+#buyPriceTable {
+  width: 100px;
+}
+
+#sellPrice {
+  width: 100px;
+}
+
 td {
   text-align: center;
+  border: 0.2px black solid;
+}
+
+table {
+  border: 2px black solid;
+  align-items: : center;
+}
+
+#mainTitle {
+  text-align:
+  center;
+}
+
+input#name {
+  background: aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 400px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+input#colour {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;}
+
+input#buy_price {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 100px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+input#sell_price {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 100px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+input#storage {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+div#form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  padding: 20px;
 }

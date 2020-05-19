@@ -14,3 +14,12 @@ get '/phones/:id/sell' do
   phone.delete
   redirect to '/phones'
 end
+
+get '/phones/add' do
+  erb(:new)
+end
+
+post '/phones' do
+  Phone.new(params).save
+  redirect to '/phones'
+end
