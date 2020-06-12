@@ -69,5 +69,22 @@ class Phone
     SqlRunner.run (sql)
   end
 
-
+  def update()
+    sql = "UPDATE phones
+    SET
+    (
+      name,
+      storage,
+      colour,
+      buy_price,
+      sell_price
+      ) =
+      (
+        $1, $2, $3, $4, $5
+      )
+      where id = $6"
+      values = [@name, @storage, @colour, @buy_price, @sell_price, @id]
+      SqlRunner.run(sql, values)
+  end
+  
 end

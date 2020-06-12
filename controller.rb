@@ -15,8 +15,19 @@ get '/phones/:id/sell' do
   redirect to '/phones'
 end
 
+get '/phones/:id/edit' do
+  @phones = Phone.all
+  erb(:edit)
+end
+
 get '/phones/add' do
   erb(:new)
+end
+
+post '/phones/:id/edit' do
+  phone = Phone.new(params)
+  phone.update
+  redirect to '/phones'
 end
 
 post '/phones' do

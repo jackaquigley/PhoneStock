@@ -1,35 +1,33 @@
-<h2>Phones</h2>
-
 <div id="phones-wrapper">
-
-  <h1 id ="mainTitle">Phone Stock</h1>
 
   <table>
 
-  <th id="nameTable">Name</th>
+  <th>Name</th>
 
-  <th id="storageTable">Storage</th>
+  <th>Storage</th>
 
-  <th id="colourTable">Colour </th>
+  <th>Colour </th>
 
-  <th id="buyPriceTable">Buy Price</th>
+  <th>Buy Price</th>
 
-  <th id="sellPrice">Sell Price</th>
+  <th>Sell Price</th>
   <% @phones.each do |phone| %>
 
   <tr>
 
-  <td> <%= phone.name %> </td>
+  <td> <input type="text" id="name" value="<%= phone.name %>"></td>
 
-  <td> <%= phone.storage %> </td>
+  <td> <input type="text" id="storage" value="<%= phone.storage %>"></td>
 
-  <td> <%= phone.colour %> </td>
+  <td><input type="text" id="colour" value="<%= phone.colour %>"></td>
 
-  <td> <%= phone.buy_price %> </td>
+  <td> <input type="number" id="buy_price" value="<%= phone.buy_price%>"> </td>
 
-  <td> <%= phone.sell_price %> </td>
+  <td> <input type="number" id="sell_price" value="<%= phone.sell_price %>"> </td>
 
-  <td> <a href="/phones/<%= phone.id %>/sell">Sell Phone</a></td>
+  <td class="button"> <a href="/phones/<%= phone.id%>/edit">Edit Price</a></td>
+
+  <td class="button"> <a href="/phones/<%= phone.id %>/sell">Sell Phone</a></td>
 
   </tr>
 

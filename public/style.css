@@ -5,26 +5,6 @@ table {
   border-spacing: 8px;
 }
 
-#nameTable {
-  width: 300px;
-}
-
-#storageTable {
-  width: 200px;
-}
-
-#colourTable {
-  width: 200px;
-}
-
-#buyPriceTable {
-  width: 100px;
-}
-
-#sellPrice {
-  width: 100px;
-}
-
 td {
   text-align: center;
   border: 0.2px black solid;
@@ -102,4 +82,27 @@ div#form {
 
 label {
   padding: 20px;
+}
+
+td.button {
+  background: aliceblue;
+}
+
+li.menu-item {
+  border: .5px solid lightgrey;
+  margin: 20px;
+  display: inline-block;
+}
+
+a.navlink {
+  display: inline-block;
+  font-size: 30px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+nav {
+  justify-content: center;
+   align-items: center;
+   display: flex;
 }
