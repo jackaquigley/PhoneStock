@@ -92,6 +92,8 @@ li.menu-item {
   border: .5px solid lightgrey;
   margin: 20px;
   display: inline-block;
+  width: 30%;
+  text-align: center;
 }
 
 a.navlink {
@@ -99,10 +101,20 @@ a.navlink {
   font-size: 30px;
   padding: 8px;
   text-decoration: none;
+  text-align: center;
+}
+
+a.buttonLink {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
 
 nav {
   justify-content: center;
    align-items: center;
    display: flex;
+   border: 1px solid lightgray;
+   border-width: 100%;
+   margin-bottom: 20px;
 }
