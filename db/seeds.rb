@@ -3,6 +3,7 @@ require ('pry')
 
 phone1 = Phone.new({
   'name' => 'iPhone XS Max',
+  'brand' => 'Apple',
   'storage' => '256GB',
   'colour' => 'Black',
   'buy_price' => 815,
@@ -11,6 +12,7 @@ phone1 = Phone.new({
 
 phone2 = Phone.new({
   'name' => 'iPhone SE',
+  'brand' => 'Apple',
   'storage' => '32GB',
   'colour' => 'Silver',
   'buy_price' => 120,
@@ -19,6 +21,7 @@ phone2 = Phone.new({
 
 phone3 = Phone.new({
   'name' => 'Samsung Galaxy S10',
+  'brand' => 'Samsung',
   'storage' => '64GB',
   'colour' => 'Black',
   'buy_price' => 880,

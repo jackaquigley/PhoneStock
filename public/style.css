@@ -3,16 +3,13 @@ table {
   font-family: sans-serif;
   padding: 12px;
   border-spacing: 8px;
+  border: 2px black solid;
+  align-items: : center;
 }
 
 td {
   text-align: center;
   border: 0.2px black solid;
-}
-
-table {
-  border: 2px black solid;
-  align-items: : center;
 }
 
 #mainTitle {
@@ -24,7 +21,7 @@ input#name {
   background: aliceblue;
   border: .25px solid lightgrey;
   padding: 4px;
-  width: 400px;
+  width: 300px;
   height: 40px;
   text-align: left;
   padding-left: 8px;
@@ -67,7 +64,18 @@ input#storage {
   background:aliceblue;
   border: .25px solid lightgrey;
   padding: 4px;
-  width: 150px;
+  width: 100px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+}
+
+input#brand {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 100px;
   height: 40px;
   text-align: left;
   padding-left: 8px;
@@ -116,5 +124,32 @@ nav {
    display: flex;
    border: 1px solid lightgray;
    border-width: 100%;
-   margin-bottom: 20px;
+}
+
+label {
+padding: 6px;
+width: 100px;
+display: inline-block;
+}
+
+div#form {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid lightgrey;
+margin-top: 4px;
+
+}
+
+div.formElement{
+  margin-top: 8px;
+  margin-bottom: 8px;
+ display: inline-block;
+ width: 33%;
+ flex-wrap: wrap;
+ flex-direction: column;
+}
+
+input submit {
+  padding: 16px;
 }

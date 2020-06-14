@@ -4,6 +4,8 @@
 
   <th>Name</th>
 
+  <th>Brand</th>
+
   <th>Storage</th>
 
   <th>Colour </th>
@@ -11,11 +13,14 @@
   <th>Buy Price</th>
 
   <th>Sell Price</th>
+
   <% @phones.each do |phone| %>
 
   <tr>
 
   <td> <input type="text" id="name" value="<%= phone.name %>"></td>
+
+  <td> <input type="text" id="brand" value="<%= phone.brand %>"></td>
 
   <td> <input type="text" id="storage" value="<%= phone.storage %>"></td>
 
@@ -25,7 +30,7 @@
 
   <td> <input type="number" id="sell_price" value="<%= phone.sell_price %>"> </td>
 
-  <td class="button"> <a class="buttonLink" href="/phones/<%= phone.id%>/edit">Edit Price</a></td>
+  <td class="button"> <a class="buttonLink" href="/phones/<%= phone.id%>/edit">Edit Details</a></td>
 
   <td class="button"> <a class="buttonLink" href="/phones/<%= phone.id %>/sell">Sell Phone</a></td>
 
