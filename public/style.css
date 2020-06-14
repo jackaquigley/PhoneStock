@@ -13,8 +13,7 @@ td {
 }
 
 #mainTitle {
-  text-align:
-  center;
+  text-align: center;
 }
 
 input#name {
@@ -26,6 +25,7 @@ input#name {
   text-align: left;
   padding-left: 8px;
   font-size: 22px;
+  text-align: center;
 }
 
 input#colour {
@@ -36,7 +36,9 @@ input#colour {
   height: 40px;
   text-align: left;
   padding-left: 8px;
-  font-size: 22px;}
+  font-size: 22px;
+  text-align: center;
+}
 
 input#buy_price {
   background:aliceblue;
@@ -47,6 +49,7 @@ input#buy_price {
   text-align: left;
   padding-left: 8px;
   font-size: 22px;
+  text-align: center;
 }
 
 input#sell_price {
@@ -58,28 +61,104 @@ input#sell_price {
   text-align: left;
   padding-left: 8px;
   font-size: 22px;
+  text-align: center;
 }
 
 input#storage {
   background:aliceblue;
   border: .25px solid lightgrey;
   padding: 4px;
-  width: 100px;
+  width: 150px;
   height: 40px;
   text-align: left;
   padding-left: 8px;
   font-size: 22px;
+  text-align: center;
 }
 
 input#brand {
   background:aliceblue;
   border: .25px solid lightgrey;
   padding: 4px;
-  width: 100px;
+  width: 150px;
   height: 40px;
   text-align: left;
   padding-left: 8px;
   font-size: 22px;
+  text-align: center;
+}
+
+input#name_new {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+  text-align: center;
+}
+
+select#brand_new{
+    background:aliceblue;
+    border: .25px solid lightgrey;
+    padding: 4px;
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    padding-left: 8px;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+input#storage_new {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+  text-align: center;
+}
+
+input#buy_price_new {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+  text-align: center;
+}
+
+input#sell_price_new {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+  text-align: center;
+}
+
+input#colour_new {
+  background:aliceblue;
+  border: .25px solid lightgrey;
+  padding: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: left;
+  padding-left: 8px;
+  font-size: 22px;
+  text-align: center;
 }
 
 div#form {
@@ -120,36 +199,45 @@ a.buttonLink {
 
 nav {
   justify-content: center;
-   align-items: center;
-   display: flex;
-   border: 1px solid lightgray;
-   border-width: 100%;
+  align-items: center;
+  display: flex;
+  border: 1px solid lightgray;
+  border-width: 100%;
 }
 
 label {
 padding: 6px;
 width: 100px;
 display: inline-block;
+font-size: 20px;
+margin: 4px;
+margin-left: 16px;
 }
 
 div#form {
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid lightgrey;
-margin-top: 4px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  margin-top: 4px;
 }
 
-div.formElement{
+div.formElement {
   margin-top: 8px;
   margin-bottom: 8px;
- display: inline-block;
- width: 33%;
- flex-wrap: wrap;
- flex-direction: column;
+  display: inline-block;
+  width: 33%;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-input submit {
-  padding: 16px;
+div.bottomElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input#newPhone{
+  justify-content: center;
+  margin: 8px;
 }

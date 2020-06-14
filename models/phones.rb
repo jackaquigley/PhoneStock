@@ -87,7 +87,7 @@ class Phone
         $1, $2, $3, $4, $5, $6
       )
       where id = $7"
-      values = [@name, @storage, @colour, @buy_price, @sell_price, @id]
+      values = [@name, @brand, @storage, @colour, @buy_price, @sell_price, @id]
       SqlRunner.run(sql, values)
   end
 

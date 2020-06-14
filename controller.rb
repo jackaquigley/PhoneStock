@@ -1,6 +1,5 @@
 require('sinatra')
 require('sinatra/contrib/all')
-# require_relative('models/network')
 require_relative('models/phones')
 also_reload('./models/*')
 
@@ -15,18 +14,13 @@ get '/phones/:id/sell' do
   redirect to '/phones'
 end
 
-get '/phones/:id/edit' do
-  @phones = Phone.all
-  erb(:edit)
-end
-
 get '/phones/add' do
   erb(:new)
 end
 
-post '/phones/:id/edit' do
+post '/phones/:id' do
   phone = Phone.new(params)
-  phone.update
+  phone.update()
   redirect to '/phones'
 end
 
